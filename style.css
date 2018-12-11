@@ -121,8 +121,8 @@ body {
 	.tabela table {
 		float:left;
 		margin-top:2%;
-		margin-left:5%;
-		width:30%;
+		margin-left:3%;
+		width:40%;
 		border-left:5px dotted #FFF;
 		border-right:5px dotted #FFF;
 		color:#FFF;
@@ -135,6 +135,8 @@ body {
 		margin-top:2%;
 		margin-right:2%;
 		margin-bottom:2%;
+		width:30%;
+		height:30%;
 	}
 	
 margin-top:5%
