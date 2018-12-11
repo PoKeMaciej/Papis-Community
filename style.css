@@ -3,14 +3,15 @@ body {
 	height:100%;
 	margin:0px;
 	padding:0;
+	background-color:#000;
 }
-.naglowek {
+#naglowek {
 	height:100px;
 	background-color:#123456;
 	padding:0;
 	position:sticky;
 }
-	.naglowek h1 {
+	#naglowek h1 {
 		height:100px;
 		font-size:50px;
 		color:#FFFFFF;
@@ -52,11 +53,11 @@ body {
 }
 	#papi h1 {
 		height:100px;
-		font-size:50px;
+		font-size:40px;
 		color:#FFFFFF;
 		text-shadow: 3px 3px 3px #000000;
 		text-align:center;
-		font-family: 'Permanent Marker', cursive;
+		font-family: 'Bungee', cursive;
 		margin:0;
 	}
 #poke {
@@ -68,27 +69,39 @@ body {
 }
 	#poke h1 {
 		height:100px;
-		font-size:50px;
+		font-size:40px;
 		color:#FFFFFF;
 		text-shadow: 3px 3px 3px #000000;
 		text-align:center;
-		font-family: 'Permanent Marker', cursive;
+		font-family: 'Bungee', cursive;
 		margin:0;
 	}
-.opis {
-	height:568px;
-	width:100%;
-	background-color:#000;
+#khotak {
+	height:100px;
+	background-color:#123456;
+	padding:0;
+	position:sticky;
+	clear:both;
 }
-	.opis img {
+	#khotak h1 {
+		height:100px;
+		font-size:40px;
+		color:#FFFFFF;
+		text-shadow: 3px 3px 3px #000000;
+		text-align:center;
+		font-family: 'Bungee', cursive;
+		margin:0;
+	}
+	.obraz img {
 		width:250px;
 		height:470px;
 		float:left;
 		margin-top:2%;
 		margin-left:2%;
+		margin-bottom:2%;
 		border:dashed 5px #FFF;
 		}
-	.opis img:hover {
+	.obraz img:hover {
 		animation: shake 0.5s;
 		animation-iteration-count:infinite; 
 		}
@@ -105,12 +118,23 @@ body {
 	90% { transform: translate(1px, 2px) rotate(0deg); }
 	100% { transform: translate(1px, -2px) rotate(-1deg); }
 	}
-	.opis table {
-		float:right;
-		margin-right:10%;
-		width:800px;
+	.tabela table {
+		float:left;
+		margin-top:2%;
+		margin-left:8%;
+		width:350px;
 		border-left:5px dotted #FFF;
 		border-right:5px dotted #FFF;
 		color:#FFF;
+		font-family: 'Roboto Slab', serif;
+		text-align:center;
 	}
+	.gif img {
+		float:right;
+		border:dashed 5px #FFF;
+		margin-top:2%;
+		margin-right:2%;
+		margin-bottom:2%;
+	}
+	
 margin-top:5%
