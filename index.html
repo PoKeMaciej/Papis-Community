@@ -7,30 +7,70 @@
 		<link rel="shortcut icon" href="favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" >
+		<link rel="js" href="js.js" >
 	</head>
 	<body>
 		<div class="naglowek">
 			<h1>Papi's Community</h1>
 		</div>
-		<div class="tresc" align="center">
-			<img src="grafika/osoby/2papi.png">
-			<img src="grafika/osoby/2poke.png">
-			<img src="grafika/osoby/2renifer.png">
-			<img src="grafika/osoby/2shalia.png">
-			<img src="grafika/osoby/2vitay.png">
-			<img src="grafika/osoby/2tancel.png">
-			<img src="grafika/osoby/2khotak.png">
-			<img src="grafika/osoby/2jaffar.png">
-			<img src="grafika/osoby/2river.png">
+		<div class="span" align="center">
+			<span class="kolo" onclick="currentDiv(1)"><img src="grafika/osoby/2papi.png"></span>
+			<span class="kolo" onclick="currentDiv(2)"><img src="grafika/osoby/2poke.png"></span>
+			<span class="kolo" onclick="currentDiv(3)"><img src="grafika/osoby/2renifer.png"></span>
+			<span class="kolo" onclick="currentDiv(4)"><img src="grafika/osoby/2shalia.png"></span>
+			<span class="kolo" onclick="currentDiv(5)"><img src="grafika/osoby/2vitay.png"></span>
+			<span class="kolo" onclick="currentDiv(6)"><img src="grafika/osoby/2tancel.png"></span>
+			<span class="kolo" onclick="currentDiv(7)"><img src="grafika/osoby/2khotak.png"></span>
+			<span class="kolo" onclick="currentDiv(8)"><img src="grafika/osoby/2jaffar.png"></span>
+			<span class="kolo" onclick="currentDiv(9)"><img src="grafika/osoby/2river.png"></span>
 		</div>
-		<div class="papi">
-			<h1>Papi</h1>
+		<div class="left-a">
+			<button class="left" onclick="plusDivs(-1)"><img src="grafika/1arrow.png"></button>
 		</div>
-		<div class="papi2">
-			<img src="grafika/osoby/papi.png">
-			<table>
-			
-			</table>
+		<div class="right-a">
+			<button class="right" onclick="plusDivs(+1)"><img src="grafika/2arrow.png"></button>
 		</div>
+		<div class="osoby" align="center">
+			<a onMouseOver="z1.src='grafika/osoby/papi.png' " onMouseOut="z1.src='grafika/osoby/1papi.png' " href="#" ><img class="mySlides" src="grafika/osoby/1papi.png" name="z1"></a>
+			<a onMouseOver="z2.src='grafika/osoby/poke.png' " onMouseOut="z2.src='grafika/osoby/1poke.png' " href="osoby/poke.html" ><img class="mySlides" src="grafika/osoby/1poke.png" name="z2"></a>
+			<a onMouseOver="z3.src='grafika/osoby/renifer.png' " onMouseOut="z3.src='grafika/osoby/1renifer.png' " href="#" ><img class="mySlides"  src="grafika/osoby/1renifer.png" name="z3"></a>
+			<a onMouseOver="z4.src='grafika/osoby/shalia.png' " onMouseOut="z4.src='grafika/osoby/1shalia.png' " href="#" ><img class="mySlides"  src="grafika/osoby/1shalia.png" name="z4"></a>
+			<a onMouseOver="z5.src='grafika/osoby/vitay.png' " onMouseOut="z5.src='grafika/osoby/1vitay.png' " href="#" ><img class="mySlides" src="grafika/osoby/1vitay.png" name="z5"></a>
+			<a onMouseOver="z6.src='grafika/osoby/tancel.png' " onMouseOut="z6.src='grafika/osoby/1tancel.png' " href="#" ><img class="mySlides" src="grafika/osoby/1tancel.png" name="z6"></a>
+			<a onMouseOver="z7.src='grafika/osoby/khotak.png' " onMouseOut="z7.src='grafika/osoby/1khotak.png' " href="#" ><img class="mySlides" src="grafika/osoby/1khotak.png" name="z7"></a>
+			<a onMouseOver="z8.src='grafika/osoby/jaffar.png' " onMouseOut="z8.src='grafika/osoby/1jaffar.png' " href="#" ><img class="mySlides" src="grafika/osoby/1jaffar.png" name="z8"></a>
+			<a onMouseOver="z9.src='grafika/osoby/river.png' " onMouseOut="z9.src='grafika/osoby/1river.png' " href="#" ><img class="mySlides" src="grafika/osoby/1river.png" name="z9"></a>
+		</div>
+		<div class="stopka">
+			<p>Strona stowrzona przez: PoKe Maciej</p>
+		</div>
+		<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				showDivs(slideIndex += n);
+				}
+				
+				function currentDiv(n) {
+				showDivs(slideIndex = n);
+				}
+
+				function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" w3-white", "");
+				}
+				x[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " w3-white";
+				}
+		</script>
 	</body>
 </html>
