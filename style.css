@@ -29,6 +29,9 @@ body {
 	background-size:cover;
 	position:sticky;
 }
+	.tresc a {
+		
+	}
 	.tresc img {
 		border:7px outset;
 		border-radius: 50%;
@@ -153,6 +156,22 @@ body {
 		margin-bottom:2%;
 		width:30%;
 		height:30%;
+	}
+	.lista ul {
+		text-align:center;
+		list-style-type:none;
+		margin-left:17%;
+		float:left;
+		color:#FFF;
+	}
+	.lista h4{
+		font-size:25px;
+		margin:0;
+		padding:0;
+		font-family: 'Bungee', cursive;
+	}
+	.lista li {
+		font-family: 'Oswald', sans-serif;
 	}
 	
 margin-top:5%
