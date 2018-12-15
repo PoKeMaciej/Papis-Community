@@ -17,8 +17,8 @@ body {
 	#naglowek h1 {
 		height:100px;
 		font-size:50px;
-		color:#FFFFFF;
-		text-shadow: 3px 3px 3px #000000;
+		color:#FFF;
+		text-shadow: 3px 3px 3px #000;
 		text-align:center;
 		font-family: 'Permanent Marker', cursive;
 		margin:0;
@@ -31,6 +31,7 @@ body {
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:sticky;
+	margin-top:1%;
 }
 	.tresc img {
 		border:8px outset;
@@ -155,7 +156,7 @@ body {
 			}
 #shalia {
 	height:100px;
-	background-color:#123456;
+	background-color:#FFCCCC;
 	padding:0;
 	position:sticky;
 	clear:both;
@@ -325,7 +326,7 @@ body {
 			}
 #river {
 	height:100px;
-	background-color:#123456;
+	background-color:#FFF;
 	padding:0;
 	position:sticky;
 	clear:both;
@@ -423,7 +424,7 @@ body {
 		font-size:20px;
 	}
 #stopka {
-	height:25px;
+	height:40px;
 	background-color:#666;
 	padding:0;
 	position:sticky;
@@ -432,6 +433,7 @@ body {
 	color:#FFF;
 	text-align:center;
 	font-style:italic;
+	padding-top:1%;
 }
 	#stopka h3 {
 		margin:0;
